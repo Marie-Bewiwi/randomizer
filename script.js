@@ -125,8 +125,7 @@ let dessin = [
 
 let bouton = document.querySelector("#randomize");
 let resultat = document.querySelector("#drawingresult");
-let numrandom = Math.floor(Math.random() * dessin.length);
-console.log(numrandom);
 bouton.addEventListener("click", function () {
+  let numrandom = Math.floor(Math.random() * dessin.length);
   resultat.textContent = dessin[numrandom];
 });
